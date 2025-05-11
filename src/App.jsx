@@ -1,39 +1,29 @@
-import { VscArrowLeft } from "react-icons/vsc";
-import { VscArrowRight } from "react-icons/vsc";
+import Header from "./components/Header";
+import { VscFiles } from "react-icons/vsc";
 import { VscSearch } from "react-icons/vsc";
-import { RiCopilotFill } from "react-icons/ri";
-import { VscChevronDown } from "react-icons/vsc";
-import { VscLayout } from "react-icons/vsc";
-import { VscLayoutSidebarLeft } from "react-icons/vsc";
-import { VscLayoutPanel } from "react-icons/vsc";
-import { VscLayoutSidebarRightOff } from "react-icons/vsc";
+import { IoIosGitBranch } from "react-icons/io";
+import { VscDebugAlt } from "react-icons/vsc";
+import { VscExtensions } from "react-icons/vsc";
+import { LuDog } from "react-icons/lu";
 
 function App() {
   return (
     <>
       <div className="">
-        <header className="w-screen h-10 border-b-2 border-primaryLight flex items-center justify-center relative">
-          <div className="flex items-center gap-3">
-            <VscArrowLeft className="icon text-lg " />
-            <VscArrowRight className="text-lg icon" />
-            <div className="w-[600px] bg-primayWhite border-neutral-600 rounded-md border-1 flex justify-center items-center hover:bg-neutral-700 transition duration-200 cursor-pointer gap-x-1">
-              <VscSearch className="" />
-              <h1>portfolio</h1>
-            </div>
-            <div className=" flex items-center icon">
-              <RiCopilotFill className="text-xl icon mr-[2px]" />
-              <VscChevronDown className="text-sm icon" />
-            </div>
-          </div>
-          <div className="flex gap-1 absolute right-4">
-            <VscLayout className="icon text-xl" />
-            <VscLayoutSidebarLeft className="icon text-xl" />
-            <VscLayoutPanel className="icon text-xl" />
-            <VscLayoutSidebarRightOff className="icon text-xl" />
-          </div>
-        </header>
+        <Header />
 
-        <aside className="flex flex-col w-1/4 bg-primaryDark h-screen border-2-1 border-primaryLight">
+        <aside className="flex w-1/4 bg-primaryDark h-screen border-r-1 border-primaryLight">
+          <div className="flex flex-col h-full items-center border-r-1 border-primaryLight space-y-6">
+            <div className="border-highlight border-l-2 w-full p-3">
+              <VscFiles className="icon text-3xl" />
+            </div>
+            <VscSearch className="icon text-3xl" />
+            <IoIosGitBranch className="icon text-3xl" />
+            <VscDebugAlt className="icon text-3xl" />
+
+            <VscExtensions className="icon text-3xl" />
+            <LuDog className="icon text-3xl" />
+          </div>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. In quis
           debitis vitae quia ipsa porro doloribus harum omnis excepturi ad quo
           asperiores unde reiciendis nam maxime totam enim, soluta laborum?
